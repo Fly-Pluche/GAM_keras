@@ -14,7 +14,6 @@ class GAM(layers.Layer):
         self.channel_attention.add(Dense(inchannel_rate))
         self.channel_attention.add(ReLU())
         self.channel_attention.add(Dense(in_channels))
-
         
         self.spatial_attention = Sequential()
 
